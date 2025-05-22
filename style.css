@@ -1,0 +1,115 @@
+body {
+    min-height: 100vh;
+    /* Nền gradient động */
+    background: linear-gradient(120deg, #bf1472 0%, #2a5298 50%, #6dd5ed 100%);
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease-in-out infinite;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.card {
+    border: none;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 40px 0 rgba(30,60,114,0.25), 0 2px 4px 0 rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(2px);
+}
+
+.card-header {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 2rem 1rem 1.2rem 1rem;
+    border-bottom: none;
+    box-shadow: 0 4px 20px 0 rgba(30,60,114,0.10);
+}
+
+.card-body {
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #1e3c72;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    border-radius: 1rem;
+    padding: 0.9rem 1.2rem;
+    border: 1.5px solid #b0c4de;
+    font-size: 1.08rem;
+    transition: all 0.3s;
+    background: #f8fbff;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(30,60,114,0.15);
+    border-color: #2a5298;
+    background: #fff;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 50%, #6dd5ed 100%);
+    border: none;
+    padding: 0.95rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 16px 0 rgba(30,60,114,0.15);
+    transition: all 0.25s;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: linear-gradient(90deg, #6dd5ed 0%, #2a5298 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(30,60,114,0.18);
+}
+
+.form-check-input:checked {
+    background-color: #2a5298;
+    border-color: #2a5298;
+}
+
+.form-check-label {
+    font-size: 1.08rem;
+    color: #2a5298;
+    font-weight: 500;
+}
+
+.alert {
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.08rem;
+}
+
+input[type="file"] {
+    padding: 0.5rem;
+    background: #f8fbff;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+    .card-body {
+        padding: 1.2rem;
+    }
+    .card-header {
+        font-size: 1.3rem;
+        padding: 1.2rem 0.5rem 0.7rem 0.5rem;
+    }
+} 
