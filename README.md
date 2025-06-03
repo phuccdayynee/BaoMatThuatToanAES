@@ -92,6 +92,4 @@ http://localhost:5001
 - Ứng dụng tạo thư mục 'uploads' để lưu tạm file, bạn có thể xóa file trong đó nếu muốn
 - Không nên giải mã file không phải do chính ứng dụng này mã hóa
 
-## Giấy phép
 
-Dự án này sử dụng giấy phép MIT. Bạn có thể tự do sử dụng, chỉnh sửa, chia sẻ.
