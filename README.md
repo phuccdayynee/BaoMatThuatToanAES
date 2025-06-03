@@ -49,15 +49,41 @@ python app.py
 
 2. Mở trình duyệt và truy cập:
 ```
-http://localhost:5000
+http://localhost:5001
 ```
 
-3. Hướng dẫn sử dụng:
-   - Nhấn "Chọn tập tin" để tải lên tập tin cần mã hóa hoặc giải mã
-   - Nhập khóa mã hóa (bạn có thể đặt tùy ý, nhưng phải nhớ để giải mã)
-   - Chọn chức năng "Mã hóa" hoặc "Giải mã"
-   - Nhấn "Bắt Đầu" để thực hiện
-   - Tập tin kết quả sẽ được tự động tải về
+## Hướng dẫn sử dụng chi tiết
+
+### 1. Giao diện chính
+![Giao diện chính](main.png)
+- Giao diện chính của ứng dụng với 3 phần chính:
+  - Chọn file cần mã hóa/giải mã
+  - Nhập khóa mã hóa
+  - Chọn thao tác (mã hóa/giải mã)
+
+### 2. Mã hóa file
+![Mã hóa file](encrypt.png)
+- Chọn file cần mã hóa
+- Nhập khóa mã hóa
+- Chọn "Mã hóa"
+- Nhấn "Bắt Đầu"
+- File đã mã hóa sẽ tự động tải về
+
+### 3. Giải mã file
+![Giải mã file](decrypt.png)
+- Chọn file đã mã hóa
+- Nhập đúng khóa đã dùng để mã hóa
+- Chọn "Giải mã"
+- Nhấn "Bắt Đầu"
+- File đã giải mã sẽ tự động tải về
+
+### 4. Thông báo lỗi
+![Thông báo lỗi](error.png)
+- Hiển thị thông báo lỗi rõ ràng khi:
+  - Chưa chọn file
+  - Chưa nhập khóa
+  - Sai khóa giải mã
+  - File không hợp lệ
 
 ## Lưu ý bảo mật
 
@@ -66,3 +92,6 @@ http://localhost:5000
 - Ứng dụng tạo thư mục 'uploads' để lưu tạm file, bạn có thể xóa file trong đó nếu muốn
 - Không nên giải mã file không phải do chính ứng dụng này mã hóa
 
+## Giấy phép
+
+Dự án này sử dụng giấy phép MIT. Bạn có thể tự do sử dụng, chỉnh sửa, chia sẻ.
